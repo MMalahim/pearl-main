@@ -1,0 +1,192 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e5e5;
+
+    .container {
+        @media (max-width:767px) {
+            padding: 0;
+        }
+    }
+
+    .footer_top {
+        display: flex;
+
+        @media (max-width:767px) {
+            flex-direction: column;
+        }
+
+        .left {
+            width: 30%;
+            padding: 20px 0;
+            display: flex;
+
+            @media (max-width:767px) {
+                width: 100%;
+            }
+
+            justify-content: end;
+
+            >div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            span {
+                @media (max-width:767px) {
+                    text-align: center;
+                }
+
+                img {
+                    width: 40%;
+                }
+            }
+
+            label {
+                font-size: 20px;
+
+                @media (max-width:767px) {
+                    text-align: center;
+                }
+            }
+        }
+
+        .right {
+            width: 70%;
+            border-left: 1px solid #c1c1c1;
+            padding: 20px 0;
+
+            @media (max-width:767px) {
+                width: 100%;
+                border-left: 0;
+                border-top: 1px solid #c1c1c1;
+            }
+
+            >div {
+                padding: 0px 40px;
+
+                @media (max-width:767px) {
+                    padding: 0px 10px;
+                }
+            }
+
+            span {
+                width: 33%;
+
+                @media (max-width:767px) {
+                    width: max-content;
+                    padding-right: 10px;
+
+                    ul {
+                        li {
+                            white-space: nowrap;
+                        }
+                    }
+                }
+
+                >label {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    li {
+                        padding: 5px 0;
+
+                        &.wrap {
+                            white-space: wrap;
+                            display: flex;
+                        }
+
+                        a {
+                            color: #000;
+                            text-decoration: none;
+                        }
+
+                        label {
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_bottom {
+        display: flex;
+        border-top: 1px solid #c1c1c1;
+        height: 50px;
+
+        @media (max-width:767px) {
+            >div {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            height: max-content;
+
+        }
+
+        .copy_right {
+            width: 30%;
+            display: flex;
+            align-items: center;
+
+            @media (max-width:767px) {
+                width: 100%;
+                border-bottom: 1px solid #c1c1c1;
+                padding: 20px 0;
+                justify-content: center;
+            }
+        }
+
+        .social_terms {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            border-left: 1px solid #c1c1c1;
+            padding: 0 30px;
+
+            @media (max-width:767px) {
+                width: 100%;
+                padding: 20px 0;
+                flex-direction: column;
+                border-left: 0;
+            }
+
+            ul {
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                margin: 0;
+
+                li {
+                    padding: 0 10px;
+                }
+            }
+
+            span {
+                width: 33%;
+
+                @media (max-width:767px) {
+                    width: max-content;
+
+                    &:last-child {
+                        margin-top: 10px;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 12px;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
