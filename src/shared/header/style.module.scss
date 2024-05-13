@@ -8,6 +8,7 @@
         &.scroll {
             background-color: #e5e5e5 !important;
             .header_links {
+                
                 ul {
                     .form{
                         background-color: #00408E;
@@ -35,6 +36,17 @@
                         a {
                             color: #000!important;
                         }
+                    }
+                }
+                .dropdown_div{
+                    padding: 0 20px;
+                    .dropdown_menu{
+                        display: none;
+                    }
+                }
+                .dropdown_div:hover{
+                    .dropdown_menu{
+                        display: block;
                     }
                 }
             }
