@@ -8,18 +8,49 @@ const page = () => {
     const [selectedOption, setSelectedOption] = useState(null);
 
     const cards1 = [
-        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "option1", label: 'Detached' },
-        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "option2", label: 'Semi Detached' },
-        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "option3", label: 'Terrace' },
-        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "option4", label: 'Flat' },
-        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "option5", label: 'Bungalow' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "detached", label: 'Detached' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "semidetached", label: 'Semi Detached' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "terrace", label: 'Terrace' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "flat", label: 'Flat' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "bungalow", label: 'Bungalow' },
     ]
 
     const cards2 = [
-        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "option1", label: 'Ground Floor' },
-        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "option2", label: 'Loft' },
-        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "option3", label: 'First Floor' },
-        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "option4", label: 'Other' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "groundfloor", label: 'Ground Floor' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "loft", label: 'Loft' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "firstfloor", label: 'First Floor' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "other", label: 'Other' },
+    ]
+
+    const groundfloor = [
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "rear", label: 'Rear' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "sideinfill", label: 'Side Infill' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "side", label: 'Side' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "sideandrear", label: 'Side And Rear' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "wraparound", label: 'Wraparound' },
+    ]
+
+    const loft = [
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "maindormer", label: 'Main Dormer' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "outriggerdormer", label: 'Outrigger Dormer' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "hiptogablewithnodormer", label: 'Hip To Gable With No Dormer' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "hiptogablewithmaindormer", label: 'Hip To Gable With Main Dormer' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "Lshapeddormer", label: 'L Shaped Dormer' },
+    ]
+
+    const firstfloor = [
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "ffside", label: 'Side' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "ffsideandrear", label: 'Side And Rear' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "ffrear", label: 'Rear' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "rearoveroutrigger", label: 'Rear Over Outrigger' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "rearovergroundfloor", label: 'Rear Over Ground Floor' },
+    ]
+
+    const other = [
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "gardenannex", label: 'Garden - Annex' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "garageconversion", label: 'Garage - Conversion' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "twostoreyside", label: 'Two Storey - Side' },
+        { image: 'https://dwpbnzvyubj62.cloudfront.net/assets/_global/icons/house_types/detached-35970db5460665aed5d931f2b6b2ddd141a7db12a8ed71966872aab630972fe7.svg', value: "twostoreyrear", label: 'Two Storey - Rear' },
     ]
 
     const cards3 = [
@@ -31,27 +62,27 @@ const page = () => {
     ]
 
     const cards4 = [
-        { value: "option1", label: 'ASAP' },
-        { value: "option2", label: '3 Months' },
-        { value: "option3", label: '6 Months' },
-        { value: "option4", label: '12 Months' },
-        { value: "option5", label: '18 Months +' },
-        { value: "option6", label: 'Im not sure' },
+        { value: "ASAP", label: 'ASAP' },
+        { value: "3months", label: '3 Months' },
+        { value: "6months", label: '6 Months' },
+        { value: "12months", label: '12 Months' },
+        { value: "18months", label: '18 Months +' },
+        { value: "imnotsure", label: 'Im not sure' },
     ]
 
     const cards5 = [
-        { value: "option1", label: 'Architectural drawings' },
-        { value: "option2", label: 'Design and planning advice' },
-        { value: "option3", label: 'Help with financing my build' },
-        { value: "option4", label: 'Help finding a builder' },
-        { value: "option5", label: 'Help finding other professionals' },
+        { value: "architecturaldrawings", label: 'Architectural drawings' },
+        { value: "designandplanningadvice", label: 'Design and planning advice' },
+        { value: "helpwithfinancingmybuild", label: 'Help with financing my build' },
+        { value: "helpfindingabuilder", label: 'Help finding a builder' },
+        { value: "helpfindingotherprofessionals", label: 'Help finding other professionals' },
     ]
 
     const cards6 = [
-        { value: "option1", label: 'Structural engineer' },
-        { value: "option2", label: 'Party wall surveyor' },
-        { value: "option3", label: 'Approved inspector' },
-        { value: "option4", label: 'Other professionals' },
+        { value: "structuralengineer", label: 'Structural engineer' },
+        { value: "partywallsurveyor", label: 'Party wall surveyor' },
+        { value: "approvedinspector", label: 'Approved inspector' },
+        { value: "otherprofessionals", label: 'Other professionals' },
     ]
 
     const cards7 = [
@@ -147,6 +178,150 @@ const page = () => {
                             </fieldset>
                         </div>
 
+                        {
+                            selectedOption === 'groundfloor'
+                                ?
+                                <div className='mb-5'>
+                                    <h3>Ground Floor</h3>
+                                    <fieldset className={`${style.cards_div}`} role="radiogroup" >
+                                        {
+                                            groundfloor.map(
+                                                (val, key) => {
+                                                    return (
+                                                        <>
+                                                            <div className={`${style.cards}`}>
+                                                                <label key={val.value}>
+                                                                    <input
+                                                                        className={`${style.cards_input}`}
+                                                                        type="radio"
+                                                                        value={val.value}
+                                                                        checked={selectedOption === val.value}
+                                                                        onChange={handleOptionChange}
+                                                                    />
+                                                                    <div className={`${style.cards_details}`}>
+                                                                        <img src={val.image} />
+                                                                        <span>
+                                                                            {val.label}
+                                                                        </span>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </>
+                                                    )
+                                                }
+                                            )
+                                        }
+
+                                    </fieldset>
+                                </div>
+                                : selectedOption === 'loft'
+                                    ?
+                                    <div className='mb-5'>
+                                        <h3>Loft</h3>
+                                        <fieldset className={`${style.cards_div}`} role="radiogroup" >
+                                            {
+                                                loft.map(
+                                                    (val, key) => {
+                                                        return (
+                                                            <>
+                                                                <div className={`${style.cards}`}>
+                                                                    <label key={val.value}>
+                                                                        <input
+                                                                            className={`${style.cards_input}`}
+                                                                            type="radio"
+                                                                            value={val.value}
+                                                                            checked={selectedOption === val.value}
+                                                                            onChange={handleOptionChange}
+                                                                        />
+                                                                        <div className={`${style.cards_details}`}>
+                                                                            <img src={val.image} />
+                                                                            <span>
+                                                                                {val.label}
+                                                                            </span>
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                            </>
+                                                        )
+                                                    }
+                                                )
+                                            }
+
+                                        </fieldset>
+                                    </div>
+                                    : selectedOption === 'firstfloor'
+                                        ?
+                                        <div className='mb-5'>
+                                            <h3>First Floor</h3>
+                                            <fieldset className={`${style.cards_div}`} role="radiogroup" >
+                                                {
+                                                    firstfloor.map(
+                                                        (val, key) => {
+                                                            return (
+                                                                <>
+                                                                    <div className={`${style.cards}`}>
+                                                                        <label key={val.value}>
+                                                                            <input
+                                                                                className={`${style.cards_input}`}
+                                                                                type="radio"
+                                                                                value={val.value}
+                                                                                checked={selectedOption === val.value}
+                                                                                onChange={handleOptionChange}
+                                                                            />
+                                                                            <div className={`${style.cards_details}`}>
+                                                                                <img src={val.image} />
+                                                                                <span>
+                                                                                    {val.label}
+                                                                                </span>
+                                                                            </div>
+                                                                        </label>
+                                                                    </div>
+                                                                </>
+                                                            )
+                                                        }
+                                                    )
+                                                }
+
+                                            </fieldset>
+                                        </div>
+                                        : selectedOption === 'other'
+                                            ?
+                                            <div className='mb-5'>
+                                                <h3>Other</h3>
+                                                <fieldset className={`${style.cards_div}`} role="radiogroup" >
+                                                    {
+                                                        other.map(
+                                                            (val, key) => {
+                                                                return (
+                                                                    <>
+                                                                        <div className={`${style.cards}`}>
+                                                                            <label key={val.value}>
+                                                                                <input
+                                                                                    className={`${style.cards_input}`}
+                                                                                    type="radio"
+                                                                                    value={val.value}
+                                                                                    checked={selectedOption === val.value}
+                                                                                    onChange={handleOptionChange}
+                                                                                />
+                                                                                <div className={`${style.cards_details}`}>
+                                                                                    <img src={val.image} />
+                                                                                    <span>
+                                                                                        {val.label}
+                                                                                    </span>
+                                                                                </div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </>
+                                                                )
+                                                            }
+                                                        )
+                                                    }
+
+                                                </fieldset>
+                                            </div>
+                                            : null
+                        }
+
                         <div className='mb-5'>
                             <h3>How many bedrooms does this property have?</h3>
                             <p>This will give us an idea of the property's size</p>
@@ -156,7 +331,7 @@ const page = () => {
                                         (val, key) => {
                                             return (
                                                 <>
-                                                    <div className={`${style.cards}`}>
+                                                    <div className={`${style.cards} ${style.height}`}>
                                                         <label key={val.value}>
                                                             <input
                                                                 className={`${style.cards_input}`}
@@ -189,7 +364,7 @@ const page = () => {
                                         (val, key) => {
                                             return (
                                                 <>
-                                                    <div className={`${style.cards}`}>
+                                                    <div className={`${style.cards} ${style.height}`}>
                                                         <label key={val.value}>
                                                             <input
                                                                 className={`${style.cards_input}`}
@@ -222,7 +397,7 @@ const page = () => {
                                         (val, key) => {
                                             return (
                                                 <>
-                                                    <div className={`${style.cards}`}>
+                                                    <div className={`${style.cards} ${style.height}`}>
                                                         <label key={val.value}>
                                                             <input
                                                                 className={`${style.cards_input}`}
@@ -247,38 +422,46 @@ const page = () => {
                             </fieldset>
                         </div>
 
-                        <div className='mb-5'>
-                            <p>What professionals are you looking for?</p>
-                            <fieldset className={`${style.cards_grid}`} role="radiogroup" >
-                                {
-                                    cards6.map(
-                                        (val, key) => {
-                                            return (
-                                                <>
-                                                    <div className={`${style.cards}`}>
-                                                        <label key={val.value}>
-                                                            <input
-                                                                className={`${style.cards_input}`}
-                                                                type="radio"
-                                                                value={val.value}
-                                                                checked={selectedOption === val.value}
-                                                                onChange={handleOptionChange}
-                                                            />
-                                                            <div className={`${style.cards_details}`}>
-                                                                <span>
-                                                                    {val.label}
-                                                                </span>
+                        {
+                            selectedOption === 'option5'
+                                ?
+                                <div className='mb-5'>
+                                    <p>What professionals are you looking for?</p>
+                                    <fieldset className={`${style.cards_grid}`} role="radiogroup" >
+                                        {
+                                            cards6.map(
+                                                (val, key) => {
+                                                    return (
+                                                        <>
+                                                            <div className={`${style.cards} ${style.height}`}>
+                                                                <label key={val.value}>
+                                                                    <input
+                                                                        className={`${style.cards_input}`}
+                                                                        type="radio"
+                                                                        value={val.value}
+                                                                        checked={selectedOption === val.value}
+                                                                        onChange={handleOptionChange}
+                                                                    />
+                                                                    <div className={`${style.cards_details}`}>
+                                                                        <span>
+                                                                            {val.label}
+                                                                        </span>
+                                                                    </div>
+                                                                </label>
                                                             </div>
-                                                        </label>
-                                                    </div>
-                                                </>
+                                                        </>
+                                                    )
+                                                }
                                             )
                                         }
-                                    )
-                                }
 
-                            </fieldset>
-                        </div>
+                                    </fieldset>
+                                </div>
+                                :
+                                null
+                        }
+
+
 
                         <hr />
 
